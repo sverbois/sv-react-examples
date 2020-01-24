@@ -1,3 +1,19 @@
+Installation
+============
+
+```
+npm install -g http-server
+git clone https://github.com/sverbois/sv-react-examples.git
+
+cd sv-react-exemples/sv-hello-lotto
+http-server .
+
+cd sv-react-exemples/sv-react-semantic-ui
+npm install
+npm start
+
+```
+
 Soirées
 =======
 
