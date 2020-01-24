@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#root {
+    max-width: 960px;
+    border: 1px solid black;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #EEE;
+}
+
+.bookTitle {
+    margin-bottom: 3px;
+}
+
+.bookMetadata {
+    font-size: 13px;
+}
+
