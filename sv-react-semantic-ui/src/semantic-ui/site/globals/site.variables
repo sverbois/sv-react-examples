@@ -1,0 +1,12 @@
+/*******************************
+     User Global Variables
+*******************************/
+
+@columnCount: 12;
+
+@primaryColor: MediumOrchid;
+@secondaryColor: DarkSlateBlue;
+@pageBackground: Lavender;
+
+@defaultBorderRadius: 0px;
+@subtleShadow: none;
