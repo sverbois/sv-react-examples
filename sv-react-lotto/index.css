@@ -1,0 +1,14 @@
+section {
+    max-width: 780px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.ball {
+    width: 20px;
+    padding: 15px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 15px;
+}
