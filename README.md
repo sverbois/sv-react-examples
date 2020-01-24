@@ -31,7 +31,7 @@ Soirée 2
 - sv-react-hello-effect
 - sv-react-clock
 
-
+#### Exercices
 
 Un champ reçoit un nombre entier et une zone affiche la table de mutiplication associée à ce nombre.
 Faire un wireframe avant avec découpage des zones et association des composants ReactJS.
@@ -41,7 +41,7 @@ Soirée 3
 
 ## Concepts
 
-- API Rest
+- API Rest, Postman
 
 ## Exemples
 
@@ -83,7 +83,6 @@ Librairies à explorer
 - react-hook-form : https://react-hook-form.com/
 - react-router : https://reacttraining.com/react-router/
 - recharts : http://recharts.org
-
 
 Semantic UI React
 =================

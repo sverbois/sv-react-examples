@@ -1,0 +1,18 @@
+#page-content {
+    max-width: 800px;
+    margin: 0px auto;
+}
+
+.leaflet-container {
+    margin: 20px 0px
+}
+
+.marker-icon {
+    padding: 5px 0px 5px 3px;
+    background-color: Plum;
+    border-radius: 50%;
+    border: 2px solid DarkViolet;
+    line-height: 13px;
+    font-size: 13px;
+    color: DarkViolet;
+}
