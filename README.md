@@ -91,14 +91,26 @@ Soirée 5
 
 - sv-react-leaflet
 
+Soirée 6
+-------------
+
+**Concepts**
+
+- context hook
+
+**Exemples**
+
+- sv-react-hello-context
+
 Librairies à explorer
 =====================
 
 - react.semantic-ui : https://react.semantic-ui.com
 - react-leaflet : https://react-leaflet.js.org/
 - react-hook-form : https://react-hook-form.com/
-- react-router : https://reacttraining.com/react-router/
 - recharts : http://recharts.org
+- react-router : https://reacttraining.com/react-router/
+
 
 Semantic UI React
 =================
