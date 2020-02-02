@@ -14,12 +14,12 @@ function Book({book}) {
 }
 
 
-function BookList({books}) {
-  //console.table(books)
+function BookList({books, filteredBookIds}) {
+  let filteredBooks = Object.values(books).filter(b => filteredBookIds.includes(b['@id']))
   return (
     <div>
-      {books.map(book =>
-        <Book key={book['@id']} book={book}/>
+      {filteredBooks.map(b =>
+        <Book key={b['@id']} book={b}/>
       )}
     </div>
   )
@@ -27,19 +27,38 @@ function BookList({books}) {
 
 
 function BookStore({plone_url, content_type}){
+  const [books, setBooks] = React.useState({});
   const [filter, setFilter] = React.useState('');
-  const [books, setBooks] = React.useState([]);
+  const [filteredBookIds, setFilteredBookIds] = React.useState([]);
 
+  // Load all books on first component rendering
   React.useEffect(() => {
-    //console.log('use effect');
-    let filter_query = filter ? "&SearchableText=" + filter + '*' : '';
-    let search_url = `${plone_url}/@search?portal_type=${content_type}&sort_on=sortable_title&fullobjects${filter_query}`;
-    //console.log(search_url);
+    let search_url = `${plone_url}/@search?portal_type=book&sort_on=sortable_title&fullobjects`;
     fetch(search_url, {
       headers: {'Accept': 'application/json'},
     })
       .then(response => response.json())
-      .then(data => {setBooks(data.items);});
+      .then(data => {
+        let books = {};
+        data.items.forEach(item => {
+          books[item['@id']] = item;
+        });
+        setBooks(books);
+      });
+  },[]);
+
+  // Use Plone @search endpoint to filter
+  React.useEffect(() => {
+    let filter_query = filter ? "&SearchableText=" + filter + '*' : '';
+    let search_url = `${plone_url}/@search?portal_type=book&sort_on=sortable_title${filter_query}`;
+    fetch(search_url, {
+      headers: {'Accept': 'application/json'},
+    })
+      .then(response => response.json())
+      .then(data => {
+        let ids = data.items.map(t => t['@id']);
+        setFilteredBookIds(ids);
+      });
   },[filter]);
 
   return (
@@ -50,12 +69,12 @@ function BookStore({plone_url, content_type}){
       <form>
         <input type="text" value={filter} onChange={event => setFilter(event.target.value)}/>
       </form>
-      <BookList books={books}/>
+      <BookList books={books} filteredBookIds={filteredBookIds}/>
     </section>
   );
 }
 
 
 ReactDOM.render(
-  <BookStore plone_url="http://plone52.test.unamur.be/Plone" content_type="book" />,
+  <BookStore plone_url="http://plone52.test.unamur.be/Plone"/>,
   document.getElementById('root'));
