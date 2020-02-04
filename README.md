@@ -102,6 +102,37 @@ Soirée 6
 
 - sv-react-hello-context
 
+
+Rappels Javascript
+==================
+
+Divers
+------
+
+- Destructuring assignment :
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
+- Arrow function expressions :
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+
+Array
+-----
+
+- Array.prototype.map() :
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Objets_globaux/Array/map
+- Array.prototype.filter() : 
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Objets_globaux/Array/filter
+- Array.prototype.forEach() :
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Objets_globaux/Array/forEach
+- Array.prototype.includes() :
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Objets_globaux/Array/includes
+
+Object
+------
+
+- Object.keys() : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys
+- Object.values() : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values
+- Object.entries() : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries
+
 Librairies à explorer
 =====================
 
