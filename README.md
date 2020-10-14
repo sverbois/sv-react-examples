@@ -14,6 +14,11 @@ npm start
 
 ```
 
+Références
+==========
+
+- https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started
+
 Soirées
 =======
 
@@ -109,29 +114,29 @@ Rappels Javascript
 Divers
 ------
 
-- Destructuring assignment :
-  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
-- Arrow function expressions :
-  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+- Affectation par décomposition :
+  https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Op%C3%A9rateurs/Affecter_par_d%C3%A9composition
+- Fonctions fléchées :
+  https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Fonctions/Fonctions_fl%C3%A9ch%C3%A9es
 
 Array
 -----
 
 - Array.prototype.map() :
-  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Objets_globaux/Array/map
+  https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array/map
 - Array.prototype.filter() : 
-  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Objets_globaux/Array/filter
+  https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array/filter
 - Array.prototype.forEach() :
-  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Objets_globaux/Array/forEach
+  https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array/forEach
 - Array.prototype.includes() :
-  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Objets_globaux/Array/includes
+  https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array/includes
 
 Object
 ------
 
-- Object.keys() : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys
-- Object.values() : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values
-- Object.entries() : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries
+- Object.keys() : https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Object/keys
+- Object.values() : https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Object/values
+- Object.entries() : https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Object/entries
 
 Librairies à explorer
 =====================
