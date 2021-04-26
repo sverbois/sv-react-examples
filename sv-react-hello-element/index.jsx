@@ -1,7 +1,7 @@
 let helloReact = React.createElement('h1', null, "Hello React !!!");
 
 let helloProps = React.createElement('a', {
-  href: 'http://www.unamur.be',
+  href: 'https://www.imio.be',
   target: '_blank',
   className: 'important',
   style: { 'font-style': 'italic' }
