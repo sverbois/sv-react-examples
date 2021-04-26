@@ -1,4 +1,4 @@
-function HookCounter({initialCount}) {
+function HookCounter({ initialCount }) {
   const [count, setCount] = React.useState(initialCount);
   return (
     <>
@@ -22,9 +22,9 @@ class ClassCounter extends React.Component {
     return (
       <>
         <h3>Class Count: {this.state.count}</h3>
-        <button onClick={() => this.setState({count: this.props.initialCount})}>Reset</button>
-        <button onClick={() => this.setState({count: this.state.count-1})}>-</button>
-        <button onClick={() => this.setState({count: this.state.count+1})}>+</button>
+        <button onClick={() => this.setState({ count: this.props.initialCount })}>Reset</button>
+        <button onClick={() => this.setState({ count: this.state.count - 1 })}>-</button>
+        <button onClick={() => this.setState({ count: this.state.count + 1 })}>+</button>
       </>
     );
   }
@@ -33,8 +33,8 @@ class ClassCounter extends React.Component {
 
 const page = (
   <>
-    <HookCounter initialCount={7}/>
-    <ClassCounter initialCount={3}/>  
+    <HookCounter initialCount={7} />
+    <ClassCounter initialCount={3} />
   </>
 );
 
