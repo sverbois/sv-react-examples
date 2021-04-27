@@ -1,0 +1,66 @@
+<model  xmlns:security="http://namespaces.plone.org/supermodel/security"  xmlns="http://namespaces.plone.org/supermodel/schema">
+    <schema>
+    <field name="title" type="zope.schema.TextLine">
+        <description/>
+        <title>Titre du livre</title>
+    </field>
+    <field name="isbn" type="zope.schema.TextLine">
+        <description/>
+        <max_length>13</max_length>
+        <min_length>13</min_length>
+        <title>ISBN</title>
+    </field>
+    <field name="category" type="zope.schema.Choice">
+        <description/>
+        <required>False</required>
+        <title>Cat&#233;gorie</title>
+        <values>
+        <element>Bande dessin&#233;e</element>
+        <element>Livre de poche</element>
+        <element>Manga</element>
+        <element></element>
+        </values>
+    </field>
+    <field name="topics" type="zope.schema.Set">
+        <description/>
+        <required>False</required>
+        <title>Th&#232;mes</title>
+        <value_type type="zope.schema.Choice">
+        <values>
+            <element>Cuisine</element>
+            <element>Informatique</element>
+            <element>Jardin</element>
+            <element>Sport</element>
+        </values>
+        </value_type>
+    </field>
+    <field name="pages" type="zope.schema.Int">
+        <description/>
+        <required>False</required>
+        <title>Nombre de pages</title>
+    </field>
+    <field name="publication_date" type="zope.schema.Date">
+        <description/>
+        <required>False</required>
+        <title>Jour de publication</title>
+    </field>
+    <field name="price" type="zope.schema.Float" security:write-permission="cmf.ManagePortal">
+        <description/>
+        <min>0.0</min>
+        <required>False</required>
+        <title>Prix</title>
+    </field>
+    <fieldset name="covers" label="Couvertures">
+        <field name="image" type="plone.namedfile.field.NamedBlobImage">
+        <description/>
+        <required>False</required>
+        <title>Couverture</title>
+        </field>
+        <field name="back" type="plone.app.textfield.RichText">
+        <description/>
+        <required>False</required>
+        <title>4&#232;me de couverture</title>
+        </field>
+    </fieldset>
+    </schema>
+</model>
