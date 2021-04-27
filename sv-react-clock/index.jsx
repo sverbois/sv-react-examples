@@ -1,18 +1,17 @@
 function HookClock() {
   const [date, setDate] = React.useState(new Date());
 
-  // Similar to componentDidMount and componentWillUnmount:
   React.useEffect(() => {
     //console.log('effect');
     const timerID = setInterval(
-      () => {setDate(new Date())},
+      () => { setDate(new Date()) },
       1000
     );
     return () => {
       //console.log('cleanup');
       clearInterval(timerID);
     }
-  },[]);
+  }, []);
 
   return (
     <div>
@@ -32,7 +31,7 @@ class ClassClock extends React.Component {
   }
   componentDidMount() {
     this.timerID = setInterval(
-      () => {this.setState({date: new Date()})},
+      () => { this.setState({ date: new Date() }) },
       1000
     );
   }

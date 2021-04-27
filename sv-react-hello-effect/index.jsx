@@ -1,15 +1,14 @@
 function HookButton() {
   const [count, setCount] = React.useState(0);
 
-  // Similar to componentDidMount and componentDidUpdate:
   React.useEffect(() => {
     document.title = `You clicked ${count} times`;
-  });
+  }, [count]);
 
   return (
     <div>
       <p>You clicked <em>HookButton</em> {count} times</p>
-      <button onClick={() => setCount(count+1)}>
+      <button onClick={() => setCount(count + 1)}>
         Click me
       </button>
     </div>
