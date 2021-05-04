@@ -4,7 +4,7 @@ let helloProps = React.createElement('a', {
   href: 'https://www.imio.be',
   target: '_blank',
   className: 'important',
-  style: { 'font-style': 'italic' }
+  style: { 'font-style': 'italic', 'font-size': '200%' }
 }, "Hello props !!!");
 
 let helloList = React.createElement("ul", null,
