@@ -3,14 +3,16 @@ function Lotto({ totalBalls, pulledBalls }) {
   const [balls, setBalls] = React.useState([]);
 
   const handlePull = (event) => {
-    let newBall, newBalls;
-    do {
-      newBall = Math.ceil(Math.random() * totalBalls);
-    } while (balls.indexOf(newBall) != -1);
+    if (balls.length < totalBalls) {
+      let newBall, newBalls;
+      do {
+        newBall = Math.ceil(Math.random() * totalBalls);
+      } while (balls.indexOf(newBall) != -1);
 
-    //newBalls = balls.concat(newBall);
-    newBalls = [...balls, newBall];
-    setBalls(newBalls);
+      //newBalls = balls.concat(newBall);
+      newBalls = [...balls, newBall];
+      setBalls(newBalls);
+    }
   };
 
   const handleClear = (event) => {
